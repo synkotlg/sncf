@@ -1,0 +1,14 @@
+SNCF VOYAGEURS - TER Hauts-de-France
+EXEMPLE FICTIF - DOCUMENT DE TEST, AUCUNE VALEUR
+PROCÈS-VERBAL DE CONSTATATION D'INFRACTION
+N° de dossier : 4521 8890 1234
+Date de l'infraction : 14/03/2025 à 07h52
+Train TER n° 847123
+Trajet : de Lille Flandres à Arras
+Motif : Absence de titre de transport
+Prix du billet : 12,40 €
+Indemnité forfaitaire : 50,00 €
+Montant total à payer : 62,40 €
+À payer avant le 13/05/2025.
+Service client joignable du lundi au vendredi de 8h00 à 20h00.
+SNCF Voyageurs SA au capital de 157 789 960 euros

@@ -1,0 +1,12 @@
+Centre de Recouvrement SNCF - EXEMPLE FICTIF (document de test)
+Référence dossier : PV-2024-778812
+Lettre du 02/09/2024
+Objet : Avis de régularisation
+Infraction constatée le 21 juin 2024 à 18:35 à bord du train TGV INOUI 6611
+Gare de départ : Paris Gare de Lyon
+Gare d'arrivée : Marseille St-Charles
+Nature de l'infraction : Voyage en 1re classe avec un titre de 2e classe
+Montant initial : 90,00 €
+Frais de dossier : 50,00 €
+Montant majoré : 375,00 €
+Nous avons bien reçu votre paiement. Montant réglé : 140,00 €

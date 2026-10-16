@@ -1,0 +1,7 @@
+SNCB - Constat d'irrégularité - EXEMPLE FICTIF (document de test)
+N° de dossier : 2025 0456 7781
+Date du contrôle : 03/02/2025 Heure : 08:12
+Train IC 2117
+Trajet : Bruxelles-Midi - Liège-Guillemins
+Motif : Titre de transport non validé
+Montant à payer : 75 EUR

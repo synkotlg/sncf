@@ -1,0 +1,14 @@
+SNCF Voyageurs - Relevé de dossiers - EXEMPLE FICTIF (document de test)
+N° de dossier : 7001 2002 3003
+Date de l'infraction : 05/01/2025 à 17h40
+Train n° 860345 - Transilien ligne P
+Trajet : Paris Est à Meaux
+Motif : Titre non validé
+Montant total à payer : 35,00 €
+
+N° de dossier : 7001 2002 9999
+Date de l'infraction : 19/02/2025 à 08h05
+RER B
+Trajet : Aéroport Charles-de-Gaulle 2 TGV à Paris Nord
+Motif : Absence de titre de transport
+Montant total à payer : 50,00 €

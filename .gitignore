@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Donnees locales : JAMAIS versionnees (amendes, documents, referentiel telecharge)
+data/*
+!data/README.md
+
+# Divers
+.DS_Store
+Thumbs.db
+*.log
