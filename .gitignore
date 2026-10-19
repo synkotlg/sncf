@@ -12,9 +12,15 @@ dist/
 frontend/node_modules/
 frontend/dist/
 
-# Donnees locales : JAMAIS versionnees (amendes, documents, referentiel telecharge)
+# Donnees locales : JAMAIS versionnees (amendes, documents)
+# data/user/ (amendes, documents, .secret) reste TOUJOURS exclu.
+# data/reference/ (referentiel ferroviaire telecharge) est versionne via Git LFS.
 data/*
 !data/README.md
+!data/reference/
+# Fichiers transitoires SQLite (jamais versionnes)
+data/reference/*.sqlite-shm
+data/reference/*.sqlite-wal
 
 # Divers
 .DS_Store
