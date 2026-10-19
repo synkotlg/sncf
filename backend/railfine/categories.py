@@ -52,7 +52,14 @@ GEO_STATUSES: dict[str, str] = {
     "none": "Non géolocalisée",
 }
 
-COUNTRIES: dict[str, str] = {"FR": "France", "BE": "Belgique"}
+COUNTRIES: dict[str, str] = {
+    "FR": "France",
+    "BE": "Belgique",
+    "CH": "Suisse",
+    "DE": "Allemagne",
+    "ES": "Espagne",
+    "GB": "Royaume-Uni",
+}
 
 TIME_SLOTS: list[tuple[str, int, int]] = [
     ("nuit (0h-5h)", 0, 5),

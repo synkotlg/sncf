@@ -2,7 +2,7 @@
 
 Groupes de sources :
 - ``base``     : sources communautaires/domaine public heberges sur GitHub (gares Trainline + iRail,
-                 frontieres et reseau de secours Natural Earth) ;
+                 frontieres et reseau Natural Earth FR/BE + voisins CH/DE/ES/GB, tunnel sous la Manche) ;
 - ``sncf``     : SNCF Open Data (lignes RFN, statuts, gares) ;
 - ``infrabel`` : Infrabel Open Data (lignes et points operationnels belges) ;
 - ``osm``      : OpenStreetMap / Overpass (voies et itineraires route=train) ;
@@ -23,7 +23,7 @@ from typing import Callable
 from ..config import AppConfig
 from . import graph as graph_mod
 from . import matching
-from .importers import gtfs, infrabel, naturalearth, osm_overpass, sncf_opendata, stations_github
+from .importers import fixed_links, gtfs, infrabel, naturalearth, osm_overpass, sncf_opendata, stations_github
 from .importers.common import SourceUnavailable
 from .store import ReferenceStore
 
@@ -85,6 +85,8 @@ def run_update(cfg: AppConfig, groups=DEFAULT_GROUPS, progress: Callable[[str], 
         step("Lignes Infrabel", "infrabel_lines", lambda: infrabel.import_lines(store, raw))
     if "osm" in groups:
         step("OpenStreetMap (voies + itineraires)", "osm_overpass", lambda: osm_overpass.import_osm(store, raw))
+    if "base" in groups:
+        step("Liaisons fixes (tunnel sous la Manche)", "fixed_links", lambda: fixed_links.import_fixed_links(store, raw))
 
     # 3. itineraires commerciaux et circulations
     if "gtfs" in groups:

@@ -202,11 +202,25 @@ SOURCES: dict[str, Source] = {
             ),
             limits=(
                 "Generalisation a petite echelle (ecarts de plusieurs centaines de metres a quelques km), "
-                "lignes secondaires incompletes, aucun nom ni type de service. Utilise seulement en "
-                "secours, quand les sources officielles ne sont pas encore importees."
+                "lignes secondaires incompletes, aucun nom ni type de service. Pour la France et la Belgique, "
+                "utilise seulement en secours quand les sources officielles ne sont pas encore importees ; "
+                "pour les pays voisins (CH, DE, ES, GB), c'est la source affichee du reseau."
             ),
             priority=90,
-            tags=("lines", "FR", "BE"),
+            tags=("lines", "FR", "BE", "CH", "DE", "ES", "GB"),
+        ),
+        Source(
+            id="fixed_links",
+            name="Liaisons ferroviaires fixes transfrontalieres",
+            provider="RailFine (trace a la main d'apres coordonnees publiques)",
+            represents="Ouvrages reliant deux reseaux nationaux, absents des sources generalisees (tunnel sous la Manche)",
+            licence="Domaine public (geometrie indicative)",
+            attribution="RailFine",
+            update_frequency="Statique",
+            homepage="https://fr.wikipedia.org/wiki/Tunnel_sous_la_Manche",
+            limits="Trace indicatif (ligne quasi rectiligne entre les deux portails), non geometrie d'ingenierie.",
+            priority=5,
+            tags=("lines", "FR", "GB"),
         ),
         Source(
             id="naturalearth_countries",

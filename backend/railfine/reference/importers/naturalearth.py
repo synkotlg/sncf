@@ -18,7 +18,10 @@ from ..store import LineRecord, ReferenceStore
 from .common import first_available
 
 BASEMAP_COUNTRIES = {"FRA", "BEL", "LUX", "DEU", "NLD", "CHE", "ITA", "ESP", "GBR", "AND", "MCO"}
-RAIL_COUNTRIES = {"FRA": "FR", "BEL": "BE"}
+# Pays dont on importe le reseau ferre (France/Belgique + voisins pour avoir
+# le contexte tout autour de la France). Pour ces pays, Natural Earth est la
+# seule source de lignes : son reseau generalise est donc affiche directement.
+RAIL_COUNTRIES = {"FRA": "FR", "BEL": "BE", "CHE": "CH", "DEU": "DE", "ESP": "ES", "GBR": "GB"}
 
 
 def _iso3(props: dict) -> str | None:
